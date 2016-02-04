@@ -14,7 +14,8 @@ CREATE TABLE [dbo].[AllCalls]
 [Reads] [bigint] NULL,
 [Writes] [bigint] NULL,
 [CPU] [int] NULL,
-[BinaryData] [image] NULL
+[BinaryData] [image] NULL,
+[NewColumn] [nchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[AllCalls] ADD CONSTRAINT [PK__AllCalls__AAAC09D884C2B235] PRIMARY KEY CLUSTERED  ([RowNumber]) ON [PRIMARY]
